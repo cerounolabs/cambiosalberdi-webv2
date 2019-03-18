@@ -58,7 +58,7 @@ jQuery(document).ready(function($){
 	function fixGallery() {
 		var offsetTop = $('.cd-main-content').offset().top,
 			scrollTop = $(window).scrollTop();
-		( scrollTop >= offsetTop ) ? $('.cd-main-content').addClass('is-fixed') : $('.cd-main-content').removeClass('is-fixed');
+		( scrollTop >= offsetTop ) ? $('.cd-main-content').addClass('') : $('.cd-main-content').removeClass('');
 	}
 
 	/************************************
@@ -117,7 +117,7 @@ jQuery(document).ready(function($){
 	      		$('.cd-gallery ul').mixItUp('filter', $matching);
 	    	} else {
 	      		// resets the filter to show all item if input is empty
-	      		$('.cd-gallery ul').mixItUp('filter', 'all');
+	      		$('.cd-gallery ul').mixItUp('filter', 'asuncion-ico');
 	    	}
 	  	}, 200 );
 	});
@@ -198,7 +198,7 @@ var buttonFilter = {
 	    }
     
 	    // If the output string is empty, show all rather than none:    
-	    !self.outputString.length && (self.outputString = 'all'); 
+	    !self.outputString.length && (self.outputString = 'asuncion-ico'); 
 	
     	// Send the output string to MixItUp via the 'filter' method:    
 		if(self.$container.mixItUp('isLoaded')){

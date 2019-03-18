@@ -5588,8 +5588,9 @@ END: WIDGET MONSTER FIX
 .buy-coin-decentralized button:hover {
     background: #2735b5 !important;
 }
-.exchange_calculator #btc_calc input.currency1value {
+.exchange_calculator #giros_calc input.currency1value, .exchange_calculator #operacion_calc input.currency1value {
     border: 1px solid #ffd600 !important;
+    border: 1px solid #fff !important;
     padding: 10px 15px;
     background: #252525;
     color: #fff;
@@ -5598,18 +5599,19 @@ END: WIDGET MONSTER FIX
     outline: 0;
     font-family: 'Montserrat';
     text-transform: uppercase;
-    width: 100px;
+    width: 200px;
     text-align: center;
-    margin-right: 15px;
     font-weight: bold;
+    margin-bottom: 5px;
 }
-.exchange_calculator #btc_calc {
+.exchange_calculator #giros_calc, .exchange_calculator #operacion_calc {
     font-weight: bold;
     text-transform: uppercase;
     color: #252525;
 }
-.exchange_calculator #btc_calc input.currency2value {
+.exchange_calculator #giros_calc input.currency2value, .exchange_calculator #operacion_calc input.currency2value {
     border: 1px solid #ffd600 !important;
+    border: 1px solid #fff !important;
     padding: 10px 15px;
     background: #252525;
     color: #fff;
@@ -5619,12 +5621,13 @@ END: WIDGET MONSTER FIX
     font-family: 'Montserrat';
     text-transform: uppercase;
     text-align: center;
-    width: 150px;
-    margin-left: 15px;
+    width: 200px;
     font-weight: bold;
+    margin-bottom: 5px;
 }
-.exchange_calculator #btc_calc select.currency_switcher {
+.exchange_calculator #giros_calc select.currency_switcher, .exchange_calculator #operacion_calc select.currency_switcher {
     border: 1px solid #ffd600 !important;
+    border: 1px solid #fff !important;
     padding: 10px 15px;
     background: #252525;
     color: #fff;
@@ -5633,17 +5636,17 @@ END: WIDGET MONSTER FIX
     outline: 0;
     font-family: 'Montserrat';
     text-transform: uppercase;
-    margin-left: 15px;
-    width: 100px;
+    width: 200px;
     text-align-last: center;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 .exchange_calculator a ,
 .exchange_calculator h2{
     display: none;
 }
 /*page exchange*/
-.exchange-calculator-top #btc_calc input.currency1value {
+.exchange-calculator-top #giros_calc input.currency1value, .exchange-calculator-top #operacion_calc input.currency1value {
     border: 1px solid #ffd600 !important;
     padding: 10px 15px;
     background: #fff;
@@ -5658,7 +5661,7 @@ END: WIDGET MONSTER FIX
     margin-right: 15px;
     font-weight: bold;
 }
-.exchange-calculator-top #btc_calc {
+.exchange-calculator-top #giros_calc, .exchange-calculator-top #operacion_calc {
     font-weight: bold;
     text-transform: uppercase;
     color: #252525;
@@ -5671,7 +5674,7 @@ END: WIDGET MONSTER FIX
     width: -ms-fit-content;
     margin: 0 auto;
 }
-.exchange-calculator-top #btc_calc input.currency2value {
+.exchange-calculator-top #giros_calc input.currency2value, .exchange-calculator-top #operacion_calc input.currency2value {
     border: 1px solid #ffd600 !important;
     padding: 10px 15px;
     background: #fff;
@@ -5686,7 +5689,7 @@ END: WIDGET MONSTER FIX
     margin-left: 15px;
     font-weight: bold;
 }
-.exchange-calculator-top #btc_calc select.currency_switcher {
+.exchange-calculator-top #giros_calc select.currency_switcher, .exchange-calculator-top #operacion_calc select.currency_switcher {
     border: 1px solid #ffd600 !important;
     padding: 10px 15px;
     background: #fff;
@@ -5971,10 +5974,10 @@ body .ccpw_table td {
   .vcw.vcw-full-card{
     width: 100% !important;
   }
-  #btc_calc{
+  #giros_calc, #operacion_calc{
     margin-bottom: 30px !important;
   }
-  .exchange_calculator #btc_calc {
+  .exchange_calculator #giros_calc, .exchange_calculator #operacion_calc {
       text-align: center;
   }
 }
@@ -27321,6 +27324,8 @@ figure.effect-apollo:hover p {
     left: 20px;
     box-shadow: 0 0 25px rgba(0,0,0,.3);
     background: #ffd600;
+    background: #15A346 !important;
+    color: #fff;
     font-size: 13px;
     border-radius: 5px;
 }
@@ -28912,7 +28917,7 @@ Main components
   left: 18px;
   height: 100%;
   width: 4px;
-  background: #fdd600;
+  background: #15A346;
 }
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
@@ -28954,6 +28959,8 @@ Main components
     .cd-timeline-img img {
         width: 35px !important;
         height: 35px !important;
+        width: 40px !important;
+        height: 40px !important;
     }
 }
 .cd-timeline-img {
@@ -28969,14 +28976,18 @@ Main components
     display: block;
     width: 40px;
     height: 40px;
+    width: 50px;
+    height: 50px;
     position: relative;
     left: 38%;
     top: 36%;
+    left: 28%;
+    top: 28%;
     margin-left: -12px;
     margin-top: -12px;
 }
 .cd-timeline-img.cd-picture {
-  background: #252525;
+  background: #15A346;
 }
 .cd-timeline-img.cd-movie {
   background: #c03b44;
@@ -29070,7 +29081,7 @@ Main components
   background: white;
   border-radius: 0.25em;
   padding: 1em;
-  box-shadow: 0 3px 0 #fdd600;
+  box-shadow: 0 3px 0 #15A346;
 }
 .cd-timeline-content:after {
   content: "";
@@ -30662,7 +30673,7 @@ section#cd-timeline.timeline_right .cd-timeline-content::before {
     box-shadow: 20px 5px 0px 5px rgba(0, 0, 0, 0.05) !important;
 }
 .tickers-black-sm .tickercontainer li {
-    font-size: 12px;
+    font-size: 20px;
     font-weight: bold;
     line-height: 40px;
 }

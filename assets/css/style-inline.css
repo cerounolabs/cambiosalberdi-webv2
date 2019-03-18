@@ -564,6 +564,7 @@ input[type="submit"]{
 }
 #modeltheme-main-head.navbar-default{
     background-color:#252525;
+    background-color:#15A346;
 }
 .fixed-sidebar-menu{
     background-color:rgba(255,255,255,0.95);
@@ -596,9 +597,9 @@ footer .footer h1.widget-title, footer .footer h3.widget-title, footer .footer .
     color:#ffffff;
 }
 .single article .article-content p,p,.post-excerpt{
-    font-family:Montserrat;
+    font-family: 'Montserrat';
     line-height:25px;
-    color:#a7a7a7;
+    /*color:#a7a7a7;*/
     font-size:15px;
 }
 .wpb_animate_when_almost_visible {
@@ -780,7 +781,7 @@ footer .footer h1.widget-title, footer .footer h3.widget-title, footer .footer .
 }
 .cryptic_full_card .symbol,
 .cryptic_full_card .name {
-    font-family: 'Roboto Condensed',! sans-serif important;
+    font-family: 'Roboto Condensed', sans-serif !important;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
@@ -852,6 +853,7 @@ footer .footer h1.widget-title, footer .footer h3.widget-title, footer .footer .
 /*preloader*/
 .cryptic_preloader_holder {
     background: #ffd600 none repeat scroll 0 0;
+    background: #15A346 none repeat scroll 0 0;
     height: 100%;
     left: 0;
     position: fixed;
@@ -866,8 +868,19 @@ footer .footer h1.widget-title, footer .footer h3.widget-title, footer .footer .
 }
 .live-coin-v3 {
     background: #252525;
+    background: #15A346;
+    color: #fff !important;
     margin: 0 auto;
-    padding: 30px;
+    padding: 10px;
+    border: 1px solid #fff;
+}
+.live-coin-v3:hover, .live-coin-v3-active {
+    background: #252525;
+    background: #fff;
+    color: #15A346 !important;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #15A346;
 }
 .show-code.show-code-left {
     float: left;
@@ -1641,7 +1654,7 @@ body.home-ico-landing-page .course-curriculum-title,
   -webkit-transition: all 250ms ease-in;
 }
 .modeltheme_button .btn_custom_whitepaper {
-    color:#6cd087
+    color:#6cd087;
     background: rgba(0,0,0,0.01) !important; /* Old browsers */
     background: -moz-linear-gradient(top, rgba(0,0,0,0.01) 0%, rgba(0,0,0,0.01) 0%, rgba(0,0,0,0.01) 0%, rgba(0,0,0,0.01) 0%, rgba(0,0,0,0.01) 100%, rgba(0,0,0,0.01) 100%, rgba(0,0,0,0.01) 100%) !important; /* FF3.6-15 */
     background: -webkit-linear-gradient(top, rgba(0,0,0,0.01) 0%,rgba(0,0,0,0.01) 0%,rgba(0,0,0,0.01) 0%,rgba(0,0,0,0.01) 0%,rgba(0,0,0,0.01) 100%,rgba(0,0,0,0.01) 100%,rgba(0,0,0,0.01) 100%) !important; /* Chrome10-25,Safari5.1-6 */
@@ -1754,6 +1767,7 @@ body.home-ico-landing-page .course-curriculum-title,
 }
 .cryptic_coin p {
     color: #666666;
+    color:#ffffff;
 }
 
 /* 5. About Us */

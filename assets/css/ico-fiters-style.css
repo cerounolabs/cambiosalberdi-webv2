@@ -81,7 +81,6 @@ xtab-filter
   height: 50px;
   width: 140px;
   margin: 0 auto;
-  z-index: 1;
 }
 .cd-tab-filter::after {
   /* small arrow icon */
@@ -163,6 +162,7 @@ xtab-filter
   }
   .cd-tab-filter ul {
     background: #1d2780;
+    background: #15A346;
     position: static;
     box-shadow: none;
     text-align: center;
@@ -1213,10 +1213,13 @@ body.archive,
 .blog_custom_listings {
     background: #fff;
     box-shadow: 0 2px 1px rgba(0,0,0,.1);
-    -ms-box-shadow: 0 2px 1px rgba(0,0,0,.1);
-    -webkit-box-shadow: 0 1px 6px rgba(0,0,0,.1);
+    -ms-box-shadow: 0 2px 1px rgba(0,0,0,1);
+    -webkit-box-shadow: 0 1px 6px rgba(0,0,0,1);
     padding: 15px 30px 20px 30px;
     margin-bottom: 30px;
+}
+.blog_custom_listings:hover {
+  background: #F5F5F5;
 }
 .blog_custom_listings.is-sticky {
     background: #fff3b2;
@@ -1242,8 +1245,10 @@ body.archive,
 }
 .blog_custom_listings .recent-received-goals h6 {
     color: #6cd087;
-    font-size: 14px;
+    color: rgba(37,37,37,.7);
+    font-size: 30px;
     margin-top: 20px;
+    font-weight: bold;
 }
 .blog_custom_listings .percentange {
     float: right;
@@ -1256,6 +1261,8 @@ body.archive,
 }
 .blog_custom_listings  .mt_listing_interest_end_date {
     color: #252525;
+    font-weight: bold;
+    font-size: 20px;
 }
 .single-icondrops .col-md-2 .blog_post_image,
 .blog_custom_listings img{
