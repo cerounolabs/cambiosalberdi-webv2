@@ -7,8 +7,29 @@
 ?>
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+        <meta http-equiv="Expires" content="0">
+        <meta http-equiv="Last-Modified" content="0">
+        <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Ofrecemos servicios de Cambios de Monedas extranjeras y transferencias Nacionales e Internacionales de dinero. Contamos con sucursales y agencias en varios puntos del Paraguay. Vea la cotización del día."/>
         <meta name="robots" content="noindex,follow" />
+
+        <meta property="og:locale" content="es_ES" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Cotización de Monedas, Cambios y Transferencias | Cambios Alberdi S.A." />
+        <meta property="og:description" content="Ofrecemos servicios de Cambios de Monedas extranjeras y transferencias Nacionales e Internacionales de dinero. Contamos con sucursales y agencias en varios puntos del Paraguay. Vea la cotización del día." />
+        <meta property="og:url" content="http://www.cambiosalberdi.com/" />
+        <meta property="og:site_name" content="Cotización de Monedas, Cambios y Transferencias | Cambios Alberdi S.A." />
+        
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:description" content="Ofrecemos servicios de Cambios de Monedas extranjeras y transferencias Nacionales e Internacionales de dinero. Contamos con sucursales y agencias en varios puntos del Paraguay. Vea la cotización del día." />
+        <meta name="twitter:title" content="Cotización de Monedas, Cambios y Transferencias | Cambios Alberdi S.A." />
+        <meta name="twitter:site" content="@CambiosAlberdi" />
+        <meta name="twitter:creator" content="@CambiosAlberdi" />
+
         <link rel="shortcut icon" href="assets/images/logo/favicon.ico">
         <title>CAMBIOS ALBERDI S.A. &#8211; PY</title>
         

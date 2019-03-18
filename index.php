@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es-ES">
+<html lang="es-ES" prefix="og: http://ogp.me/ns#">
 
 <?php
     include ('include/header.php');
@@ -1427,7 +1427,13 @@
                 var indRec  = recibeCIUGiros(ciuEnv.value, ciuRec.value);
                 var indMon  = '';
             }
-                  
+
+            function actualizar(){
+			    location.reload(true);
+            }
+
+            setTimeout("actualizar()",300000);
+            
             setTimeout(function() {
                 initLoadTablero("villamorra-ico");
                 initLoadTablero("ciudaddeleste-ico");
