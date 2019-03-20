@@ -583,6 +583,8 @@ footer .footer-top h1.widget-title, footer .footer-top h3.widget-title, footer .
 .footer-row-1{
     padding-top:80px;
     padding-bottom:80px;
+    padding-top:0px;
+    padding-bottom:0px;
 }
 .footer-row-1{
     margin-top:0;

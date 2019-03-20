@@ -1100,46 +1100,109 @@
         	</div>
         </div>
         
-        <!-- HEADER: NAV -->
-        <header class="header4" style="position:fixed; width:100%; height: 70px; top:0; overflow: hidden;">
-            <!-- BOTTOM BAR -->
-            <nav class="navbar navbar-default" style="height: 70px;" id="modeltheme-main-head">
-                <div class="container">
-                    <div class="row">
-                        <!-- LOGO -->
-                        <div class="navbar-header col-sm-12 col-md-3">
-                            <h1 class="logo">
-						        <a href="index.php">
-						            <img src="assets/images/logo/logo_menu.png" alt="Cryptic" />
-						        </a>
-						    </h1>
-                        </div>
-                        <!-- NAV MENU -->
+            <!-- HEADER: NAV -->
+            <header class="header4" style="position:fixed; width:100%; height: 70px; top:0; overflow: hidden;">
+                <!-- BOTTOM BAR -->
+                <nav class="navbar navbar-default" style="height: 70px;" id="modeltheme-main-head">
+                    <div class="container">
+                        <div class="row">
+                            <!-- LOGO -->
+                            <div class="navbar-header col-sm-12 col-md-3">
+                                <h1 class="logo">
+                                    <a href="index.php">
+                                        <img src="assets/images/logo/logo_menu.png" alt="Cryptic" />
+                                    </a>
+                                </h1>
+                            </div>
+                            <!-- NAV MENU -->
 
-                        <!-- NAV MENU -->
-                        <div id="navbar" class="navbar-collapse collapse col-sm-12 col-md-9" style="padding: 3px 0px;">
-                            <ul class="menu nav navbar-nav pull-left nav-effect nav-menu">
-                                <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="index.php#operaciones">TABLERO</a></li>
-                                <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="index.php#giros">GIROS</a></li>
-                                <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="index.php#nosotros">NOSOTROS</a></li>
-                                <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="index.php#servicios">OTROS SERVICIOS</a></li>
-                                <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="index.php#sucursales">SUCURSALES</a></li>
-                                <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="index.php#contactos">CONTACTOS</a></li>
-                            </ul>
+                            <!-- NAV MENU -->
+                            <div id="navbar" class="navbar-collapse collapse col-sm-12 col-md-9" style="padding: 3px 0px;">
+                                <ul class="menu nav navbar-nav pull-left nav-effect nav-menu">
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="index.php#operaciones">TABLERO</a></li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="index.php#giros">GIROS</a></li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="index.php#nosotros">NOSOTROS</a></li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="index.php#servicios">OTROS SERVICIOS</a></li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="index.php#sucursales">SUCURSALES</a></li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="index.php#pld">PLD</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- FOOTER -->
+            <footer id="pld" class="data_background" style="padding-top: 80px;" data-background="assets/images/footer.jpg">
+                <!-- FOOTER TOP -->
+                <div class="row footer-top">
+                    <div class="container">
+                        <div class="title-subtile-holder wow fadeIn text_center">
+						    <h1 class="section-title light_title">PREVENCIÓN DE LAVADO DE DINERO</h1>
+						</div>
+                        <div class="row">
+                            <div class="col-md-12 footer-row-1">
+                                <div class="row">
+                                    <div class="col-md-4 sidebar-1">
+                                        <aside class="widget vc_column_vc_container widget_nav_menu">
+                                            <h1 class="widget-title">&nbsp;</h1>
+                                            <div class="menu-footer1-container">
+                                                <ul class="menu">
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="assets/pld/ley_1015.pdf" target="_blank">Ley Nº 1015/1997</a></li>
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="assets/pld/ley_2302.pdf" target="_blank">Ley Nº 2302/2002</a></li>
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="assets/pld/ley_2298.pdf" target="_blank">Ley Nº 2298/2003</a></li>
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="assets/pld/ley_2381.pdf" target="_blank">Ley Nº 2381/2004</a></li>
+                                                </ul>
+                                            </div>
+                                        </aside>
+                                    </div>
+                                    <div class="col-md-4 sidebar-4">
+                                        <aside class="widget vc_column_vc_container widget_nav_menu">
+                                            <h1 class="widget-title">&nbsp;</h1>
+                                            <div class="menu-footer4-container">
+                                                <ul class="menu">
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="assets/pld/ley_2378.pdf" target="_blank">Ley Nº 2378/2004</a></li>
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="assets/pld/ley_3440.pdf" target="_blank">Ley Nº 3440/2008</a></li>
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="assets/pld/ley_3783.pdf" target="_blank">Ley Nº 3783/2009</a></li>
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="assets/pld/ley_4042.pdf" target="_blank">Ley Nº 4024/2010</a></li>
+                                                </ul>
+                                            </div>
+                                        </aside>
+                                    </div>
+                                    <div class="col-md-4 sidebar-4">
+                                        <aside class="widget vc_column_vc_container widget_nav_menu">
+                                            <h1 class="widget-title">&nbsp;</h1>
+                                            <div class="menu-footer4-container">
+                                                <ul class="menu">
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="assets/pld/resolucion_349.pdf" target="_blank">Resolución Nº 349/2013</a></li>
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="assets/pld/recomendaciones_gafi_9.pdf" target="_blank">FATF GAFI - Las 9 recomendaciones</a></li>
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="assets/pld/recomendaciones_gafi_40.pdf" target="_blank">FATF GAFI - Las 40 recomendaciones</a></li>
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="assets/pld/recomendaciones_cicad_oea.pdf" target="_blank">CICAD - Reglamentos</a></li>
+                                                </ul>
+                                            </div>
+                                        </aside>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </nav>
-        </header>
+
+                <!-- FOOTER BOTTOM -->
+                <div class="footer-div-parent">
+                    <div class="container-fluid footer">
+                        <div class="col-md-12">
+                            <p class="copyright text-center">
+                                &copy; 2019 CAMBIOS ALBERDI S.A. | Todos los derechos reservados. Desarrollado por <a href="https://cerouno.com.py/">CEROUNO Labs</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
 
 <?php 
     include ('include/lista_moneda.php');
 ?>
-
-<?php 
-    include ('include/footer_menu.php');
-?>
-
             <div class="spacer_40"></div>
         </div>
 
