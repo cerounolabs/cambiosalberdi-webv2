@@ -828,33 +828,62 @@
 						               <h1 class="section-title light_title">QUE ESPERAS!! SIGUENOS EN NUESTRAS REDES SOCIALES</h1>
 									</div>
                                     <div class="spacer_80"></div>
-                                    <div class="col-sm-12 col-lg-3"></div>
-					                <div class="col-sm-4 col-lg-2">
-				                        <div class="social-icon-box vc_row wow fadeIn">
-				                           <div class="social-icon-box-holder text-white background_facebook">
-				                              <i class="list_icon fa fa-facebook"></i>
-				                              <h3 class="list_title_text">Facebook</h3>
-				                              <a target="_blank" href="https://www.facebook.com/CambiosAlberdi/" class="list_button_text text-white">VER<i class="list_button_icon fa fa-long-arrow-right"></i>
+                                    <div class="col-sm-3 col-lg-2">
+                                        <div class="social-icon-box vc_row wow fadeIn">
+				                           <div class="social-icon-box-holder text-white background_github">
+				                              <i class="list_icon fa fa-envelope-open-o"></i>
+				                              <h3 class="list_title_text">Email</h3>
+				                              <a target="_blank" href="mailto:matriz@cambiosalberdi.com?subject=Contacto - Cambios Alberdi" class="list_button_text text-white">ENVIAR<i class="list_button_icon fa fa-long-arrow-right"></i>
 				                              </a>
 				                           </div>
 				                  		</div>
                                     </div>
-					                <div class="col-sm-4 col-lg-2">
+					                <div class="col-sm-3 col-lg-2">
+				                        <div class="social-icon-box vc_row wow fadeIn">
+				                           <div class="social-icon-box-holder text-white background_facebook">
+				                              <i class="list_icon fa fa-facebook"></i>
+				                              <h3 class="list_title_text">Facebook</h3>
+				                              <a target="_blank" href="https://www.facebook.com/CambiosAlberdi/" class="list_button_text text-white">SEGUIR<i class="list_button_icon fa fa-long-arrow-right"></i>
+				                              </a>
+				                           </div>
+				                  		</div>
+                                    </div>
+                                    <div class="col-sm-3 col-lg-2">
+				                        <div class="social-icon-box vc_row wow fadeIn">
+				                           <div class="social-icon-box-holder text-white background_whatsapp">
+				                              <i class="list_icon fa fa-whatsapp"></i>
+				                              <h3 class="list_title_text">WhatsApp</h3>
+				                              <a target="_blank" href="https://api.whatsapp.com/send?phone=595981987002" class="list_button_text text-white">SEGUIR<i class="list_button_icon fa fa-long-arrow-right"></i>
+				                              </a>
+				                           </div>
+				                  		</div>
+                                    </div>
+					                <div class="col-sm-3 col-lg-2">
 				                        <div class="social-icon-box vc_row wow fadeIn">
 				                           <div class="social-icon-box-holder text-white background_twitter">
 				                              <i class="list_icon fa fa-twitter"></i>
 				                              <h3 class="list_title_text">Twitter</h3>
-				                              <a target="_blank" href="https://twitter.com/cambiosalberdi" class="list_button_text text-white">VER<i class="list_button_icon fa fa-long-arrow-right"></i>
+				                              <a target="_blank" href="https://twitter.com/cambiosalberdi" class="list_button_text text-white">SEGUIR<i class="list_button_icon fa fa-long-arrow-right"></i>
 				                              </a>
 				                           </div>
 					                    </div>
                                     </div>
-					                <div class="col-sm-4 col-lg-2">
+					                <div class="col-sm-3 col-lg-2">
 				                        <div class="social-icon-box vc_row wow fadeIn">
 				                           <div class="social-icon-box-holder text-white background_bitcoinTalk">
 				                              <i class="list_icon fa fa-instagram"></i>
 				                              <h3 class="list_title_text">Instagram</h3>
-				                              <a target="_blank" href="https://www.instagram.com/cambiosalberdi/" class="list_button_text text-white">VER<i class="list_button_icon fa fa-long-arrow-right"></i>
+				                              <a target="_blank" href="https://www.instagram.com/cambiosalberdi/" class="list_button_text text-white">SEGUIR<i class="list_button_icon fa fa-long-arrow-right"></i>
+				                              </a>
+				                           </div>
+					                    </div>
+					                </div>
+                                    <div class="col-sm-3 col-lg-2">
+				                        <div class="social-icon-box vc_row wow fadeIn">
+				                           <div class="social-icon-box-holder text-white background_call">
+				                              <i class="list_icon fa fa-phone"></i>
+				                              <h3 class="list_title_text">Llamar</h3>
+				                              <a target="_blank" href="tel:+595981987002" class="list_button_text text-white">LLAMAR<i class="list_button_icon fa fa-long-arrow-right"></i>
 				                              </a>
 				                           </div>
 					                    </div>
@@ -1457,7 +1486,7 @@
                         var auxTra      = JSONGiro[key][indMon][indRec];
                         var auxRep      = '.';
                         var impTra      = auxTra.replace(auxRep, '');
-                        impCos.value    = (Number(impEnv.value) + Number(impTra)).toLocaleString('py');
+                        impCos.value    = Number(impTra).toLocaleString('py');
                     }
                 }
             }
