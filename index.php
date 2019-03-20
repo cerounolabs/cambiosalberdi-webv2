@@ -57,7 +57,7 @@
                                                         <a data-type="ciudaddeleste-ico"> CIUDAD DEL ESTE</a>
                                                     </li>
                                                     <li class="filter" data-filter=".km4-ico">
-                                                        <a data-type="km4-ico"> AGENCIA KM4 CDE</a>
+                                                        <a data-type="km4-ico"> KM4 CDE</a>
                                                     </li>
                                                     <li class="filter" data-filter=".encarnacion-ico">
                                                         <a data-type="encarnacion-ico"> ENCARNACI&Oacute;N</a>
@@ -315,7 +315,7 @@
                                                             <option value="sanlorenzo">SAN LORENZO</option>
                                                             <option value="saltodelguaira">SALTO DEL GUAIR&Aacute;</option>
                                                             <option value="ciudaddeleste">CIUDAD DEL ESTE</option>
-                                                            <option value="km4">AGENCIA KM4 CDE</option>
+                                                            <option value="km4">KM4 CDE</option>
                                                             <option value="encarnacion">ENCARNACI&Oacute;N</option>
                                                         </select>
                                                          = LA CIUDAD QUE REALIZAR&Aacute;S TU OPERACI&Oacute;N
@@ -827,8 +827,9 @@
 						            <div class="title-subtile-holder wow fadeIn text_center">
 						               <h1 class="section-title light_title">QUE ESPERAS!! SIGUENOS EN NUESTRAS REDES SOCIALES</h1>
 									</div>
-									<div class="spacer_80"></div>
-					                <div class="col-sm-2">
+                                    <div class="spacer_80"></div>
+                                    <div class="col-sm-12 col-lg-3"></div>
+					                <div class="col-sm-4 col-lg-2">
 				                        <div class="social-icon-box vc_row wow fadeIn">
 				                           <div class="social-icon-box-holder text-white background_facebook">
 				                              <i class="list_icon fa fa-facebook"></i>
@@ -838,10 +839,7 @@
 				                           </div>
 				                  		</div>
                                     </div>
-                                    <div class="col-sm-2">
-
-				                  	</div>
-					                <div class="col-sm-2">
+					                <div class="col-sm-4 col-lg-2">
 				                        <div class="social-icon-box vc_row wow fadeIn">
 				                           <div class="social-icon-box-holder text-white background_twitter">
 				                              <i class="list_icon fa fa-twitter"></i>
@@ -851,16 +849,11 @@
 				                           </div>
 					                    </div>
                                     </div>
-                                    
-                                    <div class="col-sm-2">
-
-                                    </div>
-
-					                <div class="col-sm-2">
+					                <div class="col-sm-4 col-lg-2">
 				                        <div class="social-icon-box vc_row wow fadeIn">
 				                           <div class="social-icon-box-holder text-white background_bitcoinTalk">
 				                              <i class="list_icon fa fa-instagram"></i>
-				                              <h3 class="list_title_text">instagram</h3>
+				                              <h3 class="list_title_text">Instagram</h3>
 				                              <a target="_blank" href="https://www.instagram.com/cambiosalberdi/" class="list_button_text text-white">VER<i class="list_button_icon fa fa-long-arrow-right"></i>
 				                              </a>
 				                           </div>
@@ -1108,21 +1101,13 @@
         </div>
         
         <!-- HEADER: NAV -->
-        <header class="header4" style="position:fixed; width:100%; top:0; overflow: hidden;">
+        <header class="header4" style="position:fixed; width:100%; height: 70px; top:0; overflow: hidden;">
             <!-- BOTTOM BAR -->
-            <nav class="navbar navbar-default" id="modeltheme-main-head">
+            <nav class="navbar navbar-default" style="height: 70px;" id="modeltheme-main-head">
                 <div class="container">
                     <div class="row">
                         <!-- LOGO -->
-                        <div class="navbar-header col-sm-12 col-md-2">
-                            <!-- NAVIGATION BURGER MENU -->
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                                <span class="sr-only"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-
+                        <div class="navbar-header col-sm-12 col-md-3">
                             <h1 class="logo">
 						        <a href="index.php">
 						            <img src="assets/images/logo/logo_menu.png" alt="Cryptic" />
@@ -1132,7 +1117,7 @@
                         <!-- NAV MENU -->
 
                         <!-- NAV MENU -->
-                        <div id="navbar" class="navbar-collapse collapse col-sm-12 col-md-7">
+                        <div id="navbar" class="navbar-collapse collapse col-sm-12 col-md-9" style="padding: 3px 0px;">
                             <ul class="menu nav navbar-nav pull-left nav-effect nav-menu">
                                 <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="index.php#operaciones">TABLERO</a></li>
                                 <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="index.php#giros">GIROS</a></li>
@@ -1446,3 +1431,4 @@
         </script>
     </body>
 </html>
+

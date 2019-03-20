@@ -5960,6 +5960,7 @@ body .ccpw_table td {
 }
 #navbar .menu > .menu-item > a {
     padding: 29px 13px !important;
+    padding: 15px 13px !important;
 }
 .special_progress small.label {
     padding: 3px 8px !important;
@@ -7441,6 +7442,7 @@ header.header1 .header-nav-actions .shop_cart {
 }
 .navbar-header h1.logo {
     margin: 22px 0 22px 20px;
+    margin: 0px;
     position: relative;
     left: 0px;
     margin-left: 0px;
