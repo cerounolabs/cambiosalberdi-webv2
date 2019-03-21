@@ -1292,7 +1292,9 @@ URL:        http://cryptic.modeltheme.com/
     
     /* Add new rules for this interval below */
 
-
+    .calc-logo {
+        display: none;
+    }
 }
 
 
@@ -1309,7 +1311,9 @@ URL:        http://cryptic.modeltheme.com/
         padding: 0;
     }
     /* Add new rules for this interval below */
-
+    .calc-logo {
+        display:block;
+    }
 }
 
 

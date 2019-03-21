@@ -3,7 +3,7 @@
     header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 
     include ('class/curl.php');
-    $tabletoJSON = get_curl('getTablero2.json');
+    $tableroJSON = get_curl('getTablero2.json');
 ?>
     <head>
         <meta charset="UTF-8">

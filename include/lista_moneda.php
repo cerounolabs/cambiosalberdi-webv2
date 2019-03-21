@@ -1,9 +1,9 @@
             <!-- TICKERS DARK -->
             <div class="tickers-black-sm crypto-ticker">
-                <ul id="webticker-dark-icons">
+                <ul id="webticker-dark-icons" style="height:42px !important">
 <?php
     $item = 0;
-    foreach ($tabletoJSON['asuncion'] as $tabAsuKey=>$tabAsuArray) {
+    foreach ($tableroJSON['asuncion'] as $tabAsuKey=>$tabAsuArray) {
         if ($tabAsuArray['bcp'] != "") {
 
 ?>

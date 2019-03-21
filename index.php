@@ -68,7 +68,7 @@
                                         <section class="cd-gallery">
                                             <ul>
 <?php
-    foreach ($tabletoJSON['asuncion'] as $tabAsuKey=>$tabAsuArray) {
+    foreach ($tableroJSON['asuncion'] as $tabAsuKey=>$tabAsuArray) {
         if ($tabAsuArray['bcp'] != "") {
 ?>
                                                 <li class=" mix asuncion-ico">
@@ -98,7 +98,7 @@
         }
     }
 
-    foreach ($tabletoJSON['villamorra'] as $tabVMKey=>$tabVMArray) {
+    foreach ($tableroJSON['villamorra'] as $tabVMKey=>$tabVMArray) {
         if ($tabVMArray['bcp'] != "") {
 ?>
                                                 <li class=" mix villamorra-ico" style="display: none;">
@@ -128,7 +128,7 @@
         }
     }
 
-    foreach ($tabletoJSON['ciudaddeleste'] as $tabCDEKey=>$tabCDEArray) {
+    foreach ($tableroJSON['ciudaddeleste'] as $tabCDEKey=>$tabCDEArray) {
         if ($tabCDEArray['bcp'] != "") {
 ?>
                                                 <li class=" mix ciudaddeleste-ico">
@@ -158,7 +158,7 @@
         }
     }
 
-    foreach ($tabletoJSON['saltodelguaira'] as $tabSDGKey=>$tabSDGArray) {
+    foreach ($tableroJSON['saltodelguaira'] as $tabSDGKey=>$tabSDGArray) {
         if ($tabSDGArray['bcp'] != "") {
 ?>
                                                 <li class=" mix saltodelguaira-ico">
@@ -188,7 +188,7 @@
         }
     }
     
-    foreach ($tabletoJSON['sanlorenzo'] as $tabSLOKey=>$tabSLOArray) {
+    foreach ($tableroJSON['sanlorenzo'] as $tabSLOKey=>$tabSLOArray) {
         if ($tabSLOArray['bcp'] != "") {
 ?>
                                                 <li class=" mix sanlorenzo-ico">
@@ -218,7 +218,7 @@
         }
     }
     
-    foreach ($tabletoJSON['km4'] as $tabKM4Key=>$tabKM4Array) {
+    foreach ($tableroJSON['km4'] as $tabKM4Key=>$tabKM4Array) {
         if ($tabKM4Array['bcp'] != "") {
 ?>
                                                 <li class=" mix km4-ico">
@@ -248,7 +248,7 @@
         }
     }
     
-    foreach ($tabletoJSON['encarnacion'] as $tabENCKey=>$tabENCArray) {
+    foreach ($tableroJSON['encarnacion'] as $tabENCKey=>$tabENCArray) {
         if ($tabENCArray['bcp'] != "") {
 ?>
                                                 <li class=" mix encarnacion-ico">
@@ -306,10 +306,9 @@
                                         </div>
                                         <div class="col-sm-12 col-md-6">
                                             <div class="exchange_calculator">
-                                                <div class="spacer_30"></div>
 	                                            <div class="text-left">
 	                                                <form id="operacion_calc" class="cp-form">                                         
-                                                        <select id="ciudad_operacion" class="currency_switcher" onchange="calcOperacion();">
+                                                        <select id="ciudad_operacion" class="currency_switcher" onchange="calcOperacion(1);">
 	                                                        <option value="asuncion">ASUNCI&Oacute;N</option>
                                                             <option value="villamorra">VILLA MORRA</option>
                                                             <option value="sanlorenzo">SAN LORENZO</option>
@@ -318,30 +317,30 @@
                                                             <option value="km4">KM4 CDE</option>
                                                             <option value="encarnacion">ENCARNACI&Oacute;N</option>
                                                         </select>
-                                                         = LA CIUDAD QUE REALIZAR&Aacute;S TU OPERACI&Oacute;N
+                                                        = SUCURSAL DE OPERACI&Oacute;N
                                                         <br />                              
-                                                        <select id="moneda_tengo" class="currency_switcher" onchange="calcOperacion();">
-                                                            <option value="usd">D&Oacute;LAR USD</option>
-                                                            <option value="pyg">GUARAN&Iacute;ES PYG</option>
-                                                            <option value="brl">REAL BRL</option>
-                                                            <option value="ars">PESO ARS</option>
-                                                            <option value="eur">EURO EUR</option>
+                                                        <select id="moneda_tengo" class="currency_switcher" onchange="calcOperacion(1);">
+                                                            <option value="PYG">GUARAN&Iacute;ES PYG</option>
+                                                            <option value="USD">D&Oacute;LAR USD</option>
+                                                            <option value="BRL">REAL BRL</option>
+                                                            <option value="ARS">PESO ARS</option>
+                                                            <option value="EUR">EURO EUR</option>
                                                         </select>
                                                         = LA MONEDA QUE TENGO
-                                                        <br /> 
-                                                        <select id="moneda_quiero" class="currency_switcher" onchange="calcOperacion();">
-                                                            <option value="usd">D&Oacute;LAR USD</option>
-                                                            <option value="pyg">GUARAN&Iacute;ES PYG</option>
-                                                            <option value="brl">REAL BRL</option>
-                                                            <option value="ars">PESO ARS</option>
-                                                            <option value="eur">EURO EUR</option>
-                                                        </select>
-                                                        = LA MONEDA QUE QUIERO
-                                                        <br /> 
-	                                                    <input id="importe_tengo" type="text" class="currency1value" value="1" onchange="calcOperacion();"/>
+                                                        <br />
+                                                        <input id="importe_tengo" type="text" class="currency1value" value="0" onchange="calcOperacion(1);"/>
                                                         = EL IMPORTE QUE TENGO
                                                         <br />
-	                                                    <input id="importe_quiero" type="text" class="currency2value" value="0" onchange="calcOperacion();"/>
+                                                        <select id="moneda_quiero" class="currency_switcher" onchange="calcOperacion(2);">
+                                                            <option value="USD">D&Oacute;LAR USD</option>
+                                                            <option value="PYG">GUARAN&Iacute;ES PYG</option>
+                                                            <option value="BRL">REAL BRL</option>
+                                                            <option value="ARS">PESO ARS</option>
+                                                            <option value="EUR">EURO EUR</option>
+                                                        </select>
+                                                        = LA MONEDA QUE QUIERO
+                                                        <br />
+                                                        <input id="importe_quiero" type="text" class="currency2value" value="0" onchange="calcOperacion(2);"/>
                                                         = EL IMPORTE QUE QUIERO
 	                                                </form>
 	                                            </div>
@@ -593,7 +592,6 @@
                                         </div>
                                         <div class="col-sm-12 col-md-6">
                                             <div class="exchange_calculator">
-                                                <div class="spacer_30"></div>
 	                                            <div class="text-left">
 	                                                <form id="giros_calc" class="cp-form">                                         
                                                         <select id="ciudad_envia" class="currency_switcher" onchange="calcGiros();">
@@ -602,7 +600,7 @@
                                                             <option value="3">ENCARNACI&Oacute;N</option>
                                                             <option value="4">SALTO DEL GUAIR&Aacute;</option>
                                                         </select>
-                                                         = CIUDAD DONDE SE ENVIA EL GIRO
+                                                         = CIUDAD DE ENV&Iacute;O
                                                         <br />                              
                                                         <select id="ciudad_recibe" class="currency_switcher" onchange="calcGiros();">
 	                                                        <option value="1">ASUNCI&Oacute;N</option>
@@ -610,19 +608,19 @@
                                                             <option value="3">ENCARNACI&Oacute;N</option>
                                                             <option value="4">SALTO DEL GUAIR&Aacute;</option>
                                                         </select>
-                                                        = CIUDAD DONDE SE RECIBE EL GIRO
+                                                        = CIUDAD PARA RECIBIR
                                                         <br /> 
                                                         <select id="moneda_envia" class="currency_switcher" onchange="calcGiros();">
 	                                                        <option value="1">D&Oacute;LAR USD</option>
                                                             <option value="2">GUARAN&Iacute;ES PYG</option>
                                                         </select>
-                                                        = LA MONEDA QUE SE QUIERE ENVIAR
+                                                        = MONEDA QUE SE ENVIA
                                                         <br /> 
 	                                                    <input id="importe_envia" type="text" class="currency1value" value="1" onchange="calcGiros();"/>
-                                                        = EL IMPORTE QUE SE QUIERE ENVIAR
+                                                        = IMPORTE QUE SE ENVIA
                                                         <br />
 	                                                    <input id="importe_costo" type="text" class="currency2value" value="0" onchange="calcGiros();" realonly disabled/>
-                                                        = TU COSTO SER&Aacute;
+                                                        = COSTO DEL ENV&Iacute;O
 	                                                    
 	                                                </form>
 	                                            </div>
@@ -765,135 +763,7 @@
                         </div>
                     </div>
 
-                    <!-- Section7 - OTROS SERVICIOS -->
-	                <div class="clearfix"></div>
-                    <div id="servicios" class="cryptic_news padding_80">
-                    	<div class="container">
-                    		<div class="row">
-                                <div class="col-sm-12">
-                                    <div class="title-subtile-holder wow  ">
-                                        <h1 class="section-title dark_title">OTROS SERVICIOS</h1>
-                                        <div class="section-subtitle dark_subtitle">Tambi&eacute;n ofrecemos otros servicios para su comodidad.</div>
-                                    </div>
-                                    <div class="spacer_80"></div>
-                                    <div class="blog-posts simple-posts blog-posts-shortcode wow fadeIn">
-                                        <div class="row">
-                                            <div class="col-sm-4">
-                                                <article class="single-post list-view  no-padding no-margin">
-                                                    <div class="blog_custom">
-                                                        <!-- POST THUMBNAIL -->
-                                                        <div class="col-md-12 post-thumbnail">
-                                                            <a class="relative" href="#"><img class="blog_post_image" src="assets/images/servicio/pe1.png" alt="What is Bitcoin Mining" /></a>
-                                                            <span class="time-n-date">PAGOExpress</span>
-                                                        </div>
-                                                    </div>
-                                                </article>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <article class="single-post list-view  no-padding no-margin">
-                                                    <div class="blog_custom">
-                                                        <!-- POST THUMBNAIL -->
-                                                        <div class="col-md-12 post-thumbnail">
-                                                            <a class="relative" href="#"><img class="blog_post_image" src="assets/images/servicio/wu.png" alt="Bitcoin vs Ethereum" /></a>
-                                                            <span class="time-n-date">Western Union</span>
-                                                        </div>
-                                                    </div>
-                                                </article>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <article class="single-post list-view  no-padding no-margin">
-                                                    <div class="blog_custom">
-                                                        <!-- POST THUMBNAIL -->
-                                                        <div class="col-md-12 post-thumbnail">
-                                                            <a class="relative" href="#"><img class="blog_post_image" src="assets/images/servicio/ap.png" alt="The Government versus Bitcoin" /></a>
-                                                            <span class="time-n-date">AquiPago</span>
-                                                        </div>
-                                                    </div>
-                                                </article>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Section8 - REDES SOCIALES -->
-                    <div class="clearfix"></div>
-                    <div class="cryptic_our_team_ico padding_80 data_background" data-background="assets/images/counter.jpg">
-	                	<div class="container">
-	                		<div class="row">
-                                <div class="col-sm-12">
-						            <div class="title-subtile-holder wow fadeIn text_center">
-						               <h1 class="section-title light_title">QUE ESPERAS!! SIGUENOS EN NUESTRAS REDES SOCIALES</h1>
-									</div>
-                                    <div class="spacer_80"></div>
-                                    <div class="col-sm-3 col-lg-2">
-                                        <div class="social-icon-box vc_row wow fadeIn">
-				                           <div class="social-icon-box-holder text-white background_github">
-				                              <i class="list_icon fa fa-envelope-open-o"></i>
-				                              <h3 class="list_title_text">Email</h3>
-				                              <a target="_blank" href="mailto:matriz@cambiosalberdi.com?subject=Contacto - Cambios Alberdi" class="list_button_text text-white">ENVIAR<i class="list_button_icon fa fa-long-arrow-right"></i>
-				                              </a>
-				                           </div>
-				                  		</div>
-                                    </div>
-					                <div class="col-sm-3 col-lg-2">
-				                        <div class="social-icon-box vc_row wow fadeIn">
-				                           <div class="social-icon-box-holder text-white background_facebook">
-				                              <i class="list_icon fa fa-facebook"></i>
-				                              <h3 class="list_title_text">Facebook</h3>
-				                              <a target="_blank" href="https://www.facebook.com/CambiosAlberdi/" class="list_button_text text-white">SEGUIR<i class="list_button_icon fa fa-long-arrow-right"></i>
-				                              </a>
-				                           </div>
-				                  		</div>
-                                    </div>
-                                    <div class="col-sm-3 col-lg-2">
-				                        <div class="social-icon-box vc_row wow fadeIn">
-				                           <div class="social-icon-box-holder text-white background_whatsapp">
-				                              <i class="list_icon fa fa-whatsapp"></i>
-				                              <h3 class="list_title_text">WhatsApp</h3>
-				                              <a target="_blank" href="https://api.whatsapp.com/send?phone=595981987002" class="list_button_text text-white">SEGUIR<i class="list_button_icon fa fa-long-arrow-right"></i>
-				                              </a>
-				                           </div>
-				                  		</div>
-                                    </div>
-					                <div class="col-sm-3 col-lg-2">
-				                        <div class="social-icon-box vc_row wow fadeIn">
-				                           <div class="social-icon-box-holder text-white background_twitter">
-				                              <i class="list_icon fa fa-twitter"></i>
-				                              <h3 class="list_title_text">Twitter</h3>
-				                              <a target="_blank" href="https://twitter.com/cambiosalberdi" class="list_button_text text-white">SEGUIR<i class="list_button_icon fa fa-long-arrow-right"></i>
-				                              </a>
-				                           </div>
-					                    </div>
-                                    </div>
-					                <div class="col-sm-3 col-lg-2">
-				                        <div class="social-icon-box vc_row wow fadeIn">
-				                           <div class="social-icon-box-holder text-white background_bitcoinTalk">
-				                              <i class="list_icon fa fa-instagram"></i>
-				                              <h3 class="list_title_text">Instagram</h3>
-				                              <a target="_blank" href="https://www.instagram.com/cambiosalberdi/" class="list_button_text text-white">SEGUIR<i class="list_button_icon fa fa-long-arrow-right"></i>
-				                              </a>
-				                           </div>
-					                    </div>
-					                </div>
-                                    <div class="col-sm-3 col-lg-2">
-				                        <div class="social-icon-box vc_row wow fadeIn">
-				                           <div class="social-icon-box-holder text-white background_call">
-				                              <i class="list_icon fa fa-phone"></i>
-				                              <h3 class="list_title_text">Llamar</h3>
-				                              <a target="_blank" href="tel:+595981987002" class="list_button_text text-white">LLAMAR<i class="list_button_icon fa fa-long-arrow-right"></i>
-				                              </a>
-				                           </div>
-					                    </div>
-					                </div>
-    							</div>
-    						</div>
-    					</div>
-    				</div>
-
-                    <!-- Section9 - SUCURSALES -->
+                    <!-- Section7 - SUCURSALES -->
 	                <div class="clearfix"></div>
 	                <div id="sucursales" class="cryptic_our_team padding_80 data_background" data-background="assets/images/bitcurrency-members.jpg">
 	                	<div class="container">
@@ -1125,6 +995,134 @@
     						</div>
     					</div>
     				</div>
+
+                    <!-- Section8 - CONTACTOS -->
+                    <div class="clearfix"></div>
+                    <div id="contactos" class="cryptic_our_team_ico padding_80 data_background" data-background="assets/images/counter.jpg">
+	                	<div class="container">
+	                		<div class="row">
+                                <div class="col-sm-12">
+						            <div class="title-subtile-holder wow fadeIn text_center">
+						               <h1 class="section-title light_title">CONTACTOS</h1>
+									</div>
+                                    <div class="spacer_80"></div>
+                                    <div class="col-sm-3 col-lg-2">
+                                        <div class="social-icon-box vc_row wow fadeIn">
+				                           <div class="social-icon-box-holder text-white background_github">
+				                              <i class="list_icon fa fa-envelope-open-o"></i>
+				                              <h3 class="list_title_text">Email</h3>
+				                              <a target="_blank" href="mailto:matriz@cambiosalberdi.com?subject=Contacto - Cambios Alberdi" class="list_button_text text-white">ENVIAR<i class="list_button_icon fa fa-long-arrow-right"></i>
+				                              </a>
+				                           </div>
+				                  		</div>
+                                    </div>
+					                <div class="col-sm-3 col-lg-2">
+				                        <div class="social-icon-box vc_row wow fadeIn">
+				                           <div class="social-icon-box-holder text-white background_facebook">
+				                              <i class="list_icon fa fa-facebook"></i>
+				                              <h3 class="list_title_text">Facebook</h3>
+				                              <a target="_blank" href="https://www.facebook.com/CambiosAlberdi/" class="list_button_text text-white">SEGUIR<i class="list_button_icon fa fa-long-arrow-right"></i>
+				                              </a>
+				                           </div>
+				                  		</div>
+                                    </div>
+                                    <div class="col-sm-3 col-lg-2">
+				                        <div class="social-icon-box vc_row wow fadeIn">
+				                           <div class="social-icon-box-holder text-white background_whatsapp">
+				                              <i class="list_icon fa fa-whatsapp"></i>
+				                              <h3 class="list_title_text">WhatsApp</h3>
+				                              <a target="_blank" href="https://api.whatsapp.com/send?phone=595981987002" class="list_button_text text-white">SEGUIR<i class="list_button_icon fa fa-long-arrow-right"></i>
+				                              </a>
+				                           </div>
+				                  		</div>
+                                    </div>
+					                <div class="col-sm-3 col-lg-2">
+				                        <div class="social-icon-box vc_row wow fadeIn">
+				                           <div class="social-icon-box-holder text-white background_twitter">
+				                              <i class="list_icon fa fa-twitter"></i>
+				                              <h3 class="list_title_text">Twitter</h3>
+				                              <a target="_blank" href="https://twitter.com/cambiosalberdi" class="list_button_text text-white">SEGUIR<i class="list_button_icon fa fa-long-arrow-right"></i>
+				                              </a>
+				                           </div>
+					                    </div>
+                                    </div>
+					                <div class="col-sm-3 col-lg-2">
+				                        <div class="social-icon-box vc_row wow fadeIn">
+				                           <div class="social-icon-box-holder text-white background_bitcoinTalk">
+				                              <i class="list_icon fa fa-instagram"></i>
+				                              <h3 class="list_title_text">Instagram</h3>
+				                              <a target="_blank" href="https://www.instagram.com/cambiosalberdi/" class="list_button_text text-white">SEGUIR<i class="list_button_icon fa fa-long-arrow-right"></i>
+				                              </a>
+				                           </div>
+					                    </div>
+					                </div>
+                                    <div class="col-sm-3 col-lg-2">
+				                        <div class="social-icon-box vc_row wow fadeIn">
+				                           <div class="social-icon-box-holder text-white background_call">
+				                              <i class="list_icon fa fa-phone"></i>
+				                              <h3 class="list_title_text">Llamar</h3>
+				                              <a target="_blank" href="tel:+595981987002" class="list_button_text text-white">LLAMAR<i class="list_button_icon fa fa-long-arrow-right"></i>
+				                              </a>
+				                           </div>
+					                    </div>
+					                </div>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+
+                    <!-- Section9 - OTROS SERVICIOS -->
+	                <div class="clearfix"></div>
+                    <div id="servicios" class="cryptic_news padding_80">
+                    	<div class="container">
+                    		<div class="row">
+                                <div class="col-sm-12">
+                                    <div class="title-subtile-holder wow  ">
+                                        <h1 class="section-title dark_title">OTROS SERVICIOS</h1>
+                                        <div class="section-subtitle dark_subtitle">Tambi&eacute;n ofrecemos otros servicios para su comodidad.</div>
+                                    </div>
+                                    <div class="spacer_80"></div>
+                                    <div class="blog-posts simple-posts blog-posts-shortcode wow fadeIn">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <article class="single-post list-view  no-padding no-margin">
+                                                    <div class="blog_custom">
+                                                        <!-- POST THUMBNAIL -->
+                                                        <div class="col-md-12 post-thumbnail">
+                                                            <a class="relative" href="#"><img class="blog_post_image" src="assets/images/servicio/pe1.png" alt="What is Bitcoin Mining" /></a>
+                                                            <span class="time-n-date">PAGOExpress</span>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <article class="single-post list-view  no-padding no-margin">
+                                                    <div class="blog_custom">
+                                                        <!-- POST THUMBNAIL -->
+                                                        <div class="col-md-12 post-thumbnail">
+                                                            <a class="relative" href="#"><img class="blog_post_image" src="assets/images/servicio/wu.png" alt="Bitcoin vs Ethereum" /></a>
+                                                            <span class="time-n-date">Western Union</span>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <article class="single-post list-view  no-padding no-margin">
+                                                    <div class="blog_custom">
+                                                        <!-- POST THUMBNAIL -->
+                                                        <div class="col-md-12 post-thumbnail">
+                                                            <a class="relative" href="#"><img class="blog_post_image" src="assets/images/servicio/ap.png" alt="The Government versus Bitcoin" /></a>
+                                                            <span class="time-n-date">AquiPago</span>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
         		</div>
         	</div>
         </div>
@@ -1151,8 +1149,9 @@
                                     <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="index.php#operaciones">TABLERO</a></li>
                                     <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="index.php#giros">GIROS</a></li>
                                     <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="index.php#nosotros">NOSOTROS</a></li>
-                                    <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="index.php#servicios">OTROS SERVICIOS</a></li>
                                     <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="index.php#sucursales">SUCURSALES</a></li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="index.php#contactos">CONTACTOS</a></li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="index.php#servicios">OTROS SERVICIOS</a></li>
                                     <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="index.php#pld">PLD</a></li>
                                 </ul>
                             </div>
@@ -1491,18 +1490,97 @@
                 }
             }
 
-            function calcOperacion() {
-                var ciuEnv  = document.getElementById('ciudad_envia');
-                var ciuRec  = document.getElementById('ciudad_recibe');
-                var monEnv  = document.getElementById('moneda_envia');
-                var impEnv  = document.getElementById('importe_envia');
-                var impCos  = document.getElementById('importe_costo');
+            function calcOperacion(valOpe) {
+                var codCiuOpe   = document.getElementById('ciudad_operacion');
+                var codMonTen   = document.getElementById('moneda_tengo');
+                var codImpTen   = document.getElementById('importe_tengo');
+                var codMonQui   = document.getElementById('moneda_quiero');
+                var codImpQui   = document.getElementById('importe_quiero');
 
-                var JSONGiro= Object.assign(<?php echo json_encode($JSONGiros); ?>);
+                var JSONTablero = Object.assign(<?php echo json_encode($tableroJSON); ?>);
 
-                var indEnv  = enviaCIUGiros(ciuEnv.value);
-                var indRec  = recibeCIUGiros(ciuEnv.value, ciuRec.value);
-                var indMon  = '';
+                for(let key in JSONTablero) {
+                    if (key == codCiuOpe.value) {
+                        var auxJSON = JSONTablero[key];
+                        var auxBCP  = '';
+                        var auxOPE  = '';
+
+                        if ((codMonTen.value == 'PYG') && (codMonQui.value != 'PYG') && (codMonTen.value != codMonQui.value)) {
+                            auxBCP = codMonQui.value;
+                            auxOPE = 'venta';
+                        }
+
+                        if ((codMonTen.value != 'PYG') && (codMonQui.value == 'PYG') && (codMonTen.value != codMonQui.value)) {
+                            auxBCP = codMonTen.value;
+                            auxOPE = 'compra';
+                        }
+
+                        if ((codMonTen.value != 'PYG') && (codMonQui.value != 'PYG') && (codMonTen.value != codMonQui.value)) {
+                            if (codMonTen.value == 'USD') {
+                                auxBCP = 'USD -> ' + codMonQui.value;
+                                auxOPE = 'compra';
+                            }
+
+                            if (codMonQui.value == 'USD') {
+                                auxBCP = 'USD -> ' + codMonTen.value;
+                                auxOPE = 'venta';
+                            }
+                        }
+
+                        if (((codMonTen.value == 'PYG') && (codMonQui.value == 'PYG')) || (codMonTen.value == codMonQui.value)) {
+                            codImpQui.value = 0;
+                            codImpTen.value = 0;
+                        }
+
+                        for(let key2 in auxJSON) {
+                            var auxOBJ  = auxJSON[key2];
+                            var auxInd  = auxOBJ['bcp'];
+                            var auxRe1  = '.';
+                            var auxRe2  = ',';
+                            var impCot  = 0;
+                            var impImp  = 0;
+
+                            if ((auxInd == auxBCP) && auxBCP != '' ) {
+                                impCot  = auxOBJ[auxOPE];
+                                impCot  = impCot.replace(auxRe1, '');
+                                impCot  = impCot.replace(auxRe2, '.');
+                                
+                                if ((auxOPE == 'compra') && (valOpe == 1)){
+                                    impImp          = Number(codImpTen.value) * Number(impCot);
+                                    codImpQui.value = Number(impImp).toLocaleString('py');
+                                    console.log("COMPRA");
+                                }
+
+                                if ((auxOPE == 'compra') && (valOpe == 2)){
+                                    impImp          = Number(codImpQui.value) / Number(impCot);
+                                    codImpTen.value = Number(impImp).toLocaleString('py');
+                                    console.log("VENTA");
+                                }
+
+                                if ((auxOPE == 'venta') && (valOpe == 1)){
+                                    impImp          = Number(codImpTen.value) / Number(impCot);
+                                    codImpQui.value = Number(impImp).toLocaleString('py');
+                                    console.log("COMPRA");
+                                }
+
+                                if ((auxOPE == 'venta') && (valOpe == 2)){
+                                    impImp          = Number(codImpQui.value) * Number(impCot);
+                                    codImpTen.value = Number(impImp).toLocaleString('py');
+                                    console.log("VENTA");
+                                }
+
+                                console.log("auxOPE     => " + auxOPE);
+                                console.log("valOpe     => " + valOpe);
+                                console.log("codCiuOpe  => " + codCiuOpe.value);
+                                console.log("codMonTen  => " + codMonTen.value);
+                                console.log("codImpTen  => " + codImpTen.value);
+                                console.log("codMonQui  => " + codMonQui.value);
+                                console.log("codImpQui  => " + codImpQui.value);
+                                console.log("+++++++++");
+                            }
+                        }
+                    }
+                }
             }
 
             function actualizar(){
