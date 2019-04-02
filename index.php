@@ -101,7 +101,7 @@
     foreach ($tableroJSON['villamorra'] as $tabVMKey=>$tabVMArray) {
         if ($tabVMArray['bcp'] != "") {
 ?>
-                                                <li class=" mix villamorra-ico" style="display: none;">
+                                                <li class=" mix villamorra-ico" style="display: none !important;">
                                                     <div class="col-md-12 post ">
                                                         <div class="blog_custom_listings">
                                                             <div class="row">
@@ -131,7 +131,7 @@
     foreach ($tableroJSON['ciudaddeleste'] as $tabCDEKey=>$tabCDEArray) {
         if ($tabCDEArray['bcp'] != "") {
 ?>
-                                                <li class=" mix ciudaddeleste-ico">
+                                                <li class=" mix ciudaddeleste-ico" style="display: none !important;">
                                                     <div class="col-md-12 post ">
                                                         <div class="blog_custom_listings">
                                                             <div class="row">
@@ -161,7 +161,7 @@
     foreach ($tableroJSON['saltodelguaira'] as $tabSDGKey=>$tabSDGArray) {
         if ($tabSDGArray['bcp'] != "") {
 ?>
-                                                <li class=" mix saltodelguaira-ico">
+                                                <li class=" mix saltodelguaira-ico" style="display: none !important;">
                                                     <div class="col-md-12 post ">
                                                         <div class="blog_custom_listings">
                                                             <div class="row">
@@ -191,7 +191,7 @@
     foreach ($tableroJSON['sanlorenzo'] as $tabSLOKey=>$tabSLOArray) {
         if ($tabSLOArray['bcp'] != "") {
 ?>
-                                                <li class=" mix sanlorenzo-ico">
+                                                <li class=" mix sanlorenzo-ico" style="display: none !important;">
                                                     <div class="col-md-12 post ">
                                                         <div class="blog_custom_listings">
                                                             <div class="row">
@@ -221,7 +221,7 @@
     foreach ($tableroJSON['km4'] as $tabKM4Key=>$tabKM4Array) {
         if ($tabKM4Array['bcp'] != "") {
 ?>
-                                                <li class=" mix km4-ico">
+                                                <li class=" mix km4-ico" style="display: none !important;">
                                                     <div class="col-md-12 post ">
                                                         <div class="blog_custom_listings">
                                                             <div class="row">
@@ -251,7 +251,7 @@
     foreach ($tableroJSON['encarnacion'] as $tabENCKey=>$tabENCArray) {
         if ($tabENCArray['bcp'] != "") {
 ?>
-                                                <li class=" mix encarnacion-ico">
+                                                <li class=" mix encarnacion-ico" style="display: none !important;">
                                                     <div class="col-md-12 post ">
                                                         <div class="blog_custom_listings">
                                                             <div class="row">
@@ -1214,6 +1214,56 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="spacer_80"></div>
+                    <div class="container">
+                        <div class="title-subtile-holder wow fadeIn text_center">
+						    <h1 class="section-title light_title">COMPOSICI&Oacute;N ACCIONARIA</h1>
+                            <div class="section-subtitle light_subtitle">CAMBIOS ALBERDI S.A., comunica al sistema financiero nacional, a sus clientes y p&uacute;blico en general que su composici&oacute;n accionaria se encuentra estructurada de la siguiente manera</div>
+						</div>
+                        <div class="row">
+                            <div class="col-md-12 footer-row-1">
+                                <div class="row">
+                                    <div class="col-md-4 sidebar-1">
+                                        <aside class="widget vc_column_vc_container widget_nav_menu">
+                                            <h1 class="widget-title">&nbsp;</h1>
+                                            <div class="menu-footer1-container">
+                                                <ul class="menu">
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom">Nombre</li>
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom">Gloria Beatriz Caballero de Zubeldía</li>
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom">Gloria Beatriz Zubeldía Caballero</li>
+                                                </ul>
+                                            </div>
+                                        </aside>
+                                    </div>
+                                    <div class="col-md-4 sidebar-4">
+                                        <aside class="widget vc_column_vc_container widget_nav_menu">
+                                            <h1 class="widget-title">&nbsp;</h1>
+                                            <div class="menu-footer4-container">
+                                                <ul class="menu">
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom">Porcentaje de Participación en votos</li>
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom">65,93%</li>
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom">34,07%</li>
+                                                </ul>
+                                            </div>
+                                        </aside>
+                                    </div>
+                                    <div class="col-md-4 sidebar-4">
+                                        <aside class="widget vc_column_vc_container widget_nav_menu">
+                                            <h1 class="widget-title">&nbsp;</h1>
+                                            <div class="menu-footer4-container">
+                                                <ul class="menu">
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom">Pa&iacute;s</li>
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom">Paraguay</li>
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom">Paraguay</li>
+                                                </ul>
+                                            </div>
+                                        </aside>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- FOOTER BOTTOM -->
@@ -1548,35 +1598,22 @@
                                 if ((auxOPE == 'compra') && (valOpe == 1)){
                                     impImp          = Number(codImpTen.value) * Number(impCot);
                                     codImpQui.value = Number(impImp).toLocaleString('py');
-                                    console.log("COMPRA");
                                 }
 
                                 if ((auxOPE == 'compra') && (valOpe == 2)){
                                     impImp          = Number(codImpQui.value) / Number(impCot);
                                     codImpTen.value = Number(impImp).toLocaleString('py');
-                                    console.log("VENTA");
                                 }
 
                                 if ((auxOPE == 'venta') && (valOpe == 1)){
                                     impImp          = Number(codImpTen.value) / Number(impCot);
                                     codImpQui.value = Number(impImp).toLocaleString('py');
-                                    console.log("COMPRA");
                                 }
 
                                 if ((auxOPE == 'venta') && (valOpe == 2)){
                                     impImp          = Number(codImpQui.value) * Number(impCot);
                                     codImpTen.value = Number(impImp).toLocaleString('py');
-                                    console.log("VENTA");
                                 }
-
-                                console.log("auxOPE     => " + auxOPE);
-                                console.log("valOpe     => " + valOpe);
-                                console.log("codCiuOpe  => " + codCiuOpe.value);
-                                console.log("codMonTen  => " + codMonTen.value);
-                                console.log("codImpTen  => " + codImpTen.value);
-                                console.log("codMonQui  => " + codMonQui.value);
-                                console.log("codImpQui  => " + codImpQui.value);
-                                console.log("+++++++++");
                             }
                         }
                     }
@@ -1588,7 +1625,7 @@
             }
 
             setTimeout("actualizar()",300000);
-            
+
             setTimeout(function() {
                 initLoadTablero("villamorra-ico");
                 initLoadTablero("ciudaddeleste-ico");
@@ -1597,8 +1634,29 @@
                 initLoadTablero("km4-ico");
                 initLoadTablero("encarnacion-ico");
                 initGiros(0);
-            }, 3000);
+            }, 4000);
+
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-66561880-3', 'auto');
+            ga('send', 'pageview');
         </script>
+
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+            var Tawk_API = Tawk_API||{}, Tawk_LoadStart = new Date();
+            (function(){
+                var s1		= document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+                s1.async	= true;
+                s1.src		= 'https://embed.tawk.to/577a02774cc88cf418f5d231/default';
+                s1.charset	= 'UTF-8';
+                s1.setAttribute('crossorigin', '*');
+                s0.parentNode.insertBefore(s1, s0);
+            })();
+        </script>
+        <!--End of Tawk.to Script-->
     </body>
 </html>
-

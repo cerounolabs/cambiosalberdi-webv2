@@ -14,7 +14,7 @@ jQuery(document).ready(function($){
     /* Sample function that returns boolean in case the browser is Internet Explorer*/
     
     jQuery(window).on("load", function(){
-        jQuery( '.cryptic_preloader_holder' ).fadeOut( 1000, function() {
+        jQuery( '.cryptic_preloader_holder' ).fadeOut( 6000, function() {
             jQuery( this ).fadeOut();
         });
     });

@@ -76,4 +76,13 @@
             }
         </style>
         <!--[endif]-->
+
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b992f5c0d4bf851"></script>-->
+
+        <script type="text/javascript">
+            if (screen.width < 600) {
+                window.location.replace("http://m.cambiosalberdi.com/"); 
+            }
+        </script>
     </head>
