@@ -32,6 +32,10 @@
                     <div class="clearfix"></div>
                     <div id="operaciones" class="cryptic_ico_listing_grid padding_80 data_background text-center" data-background="assets/images/bitcurrency-members.jpg">
                         <div class="container">
+                            <div>
+                            <iframe width="340" height="350" src="http://www.cambiosalberdi.com/widget/cotizacion.php?ciudad=sdg" frameborder="0"></iframe>
+
+                            </div>
                             <div class="row">
                                 <div class="iconfilter-shortcode wow ">
                                     <main class="cd-main-content">
