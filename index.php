@@ -1566,14 +1566,24 @@
                         }
 
                         if ((codMonTen.value != 'PYG') && (codMonQui.value != 'PYG') && (codMonTen.value != codMonQui.value)) {
-                            if (codMonTen.value == 'USD') {
+                            if (codMonTen.value == 'USD' && codMonQui.value != 'EUR') {
                                 auxBCP = 'USD -> ' + codMonQui.value;
                                 auxOPE = 'compra';
                             }
 
-                            if (codMonQui.value == 'USD') {
+                            if (codMonQui.value == 'USD' && codMonTen.value != 'EUR') {
                                 auxBCP = 'USD -> ' + codMonTen.value;
                                 auxOPE = 'venta';
+                            }
+
+                            if (codMonTen.value == 'USD' && codMonQui.value == 'EUR') {
+                                auxBCP = 'USD -> ' + codMonQui.value;
+                                auxOPE = 'venta';
+                            }
+
+                            if (codMonQui.value == 'USD' && codMonTen.value == 'EUR') {
+                                auxBCP = 'USD -> ' + codMonTen.value;
+                                auxOPE = 'compra';
                             }
                         }
 
