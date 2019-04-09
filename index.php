@@ -32,10 +32,6 @@
                     <div class="clearfix"></div>
                     <div id="operaciones" class="cryptic_ico_listing_grid padding_80 data_background text-center" data-background="assets/images/bitcurrency-members.jpg">
                         <div class="container">
-                            <div>
-                            <iframe width="340" height="350" src="http://www.cambiosalberdi.com/widget/cotizacion.php?ciudad=sdg" frameborder="0"></iframe>
-
-                            </div>
                             <div class="row">
                                 <div class="iconfilter-shortcode wow ">
                                     <main class="cd-main-content">
@@ -490,7 +486,7 @@
                                                 <table>
                                                     <tbody>
 <?php
-    foreach ($JSONGiros['encarnacion_pyg'] as $giroASUKey=>$giroASUArray) {
+    foreach ($JSONGiros['saltodelguaira_pyg'] as $giroASUKey=>$giroASUArray) {
 ?>
                                                         <tr>
                                                         <td><?php echo $giroASUArray['desde_hasta']; ?></td>
@@ -511,7 +507,7 @@
                                                 <table>
                                                     <tbody>
 <?php
-    foreach ($JSONGiros['encarnacion_usd'] as $giroASUKey=>$giroASUArray) {
+    foreach ($JSONGiros['saltodelguaira_usd'] as $giroASUKey=>$giroASUArray) {
 ?>
                                                         <tr>
                                                         <td><?php echo $giroASUArray['desde_hasta']; ?></td>
@@ -535,7 +531,7 @@
                                                 <table>
                                                     <tbody>
 <?php
-    foreach ($JSONGiros['saltodelguaira_pyg'] as $giroASUKey=>$giroASUArray) {
+    foreach ($JSONGiros['encarnacion_pyg'] as $giroASUKey=>$giroASUArray) {
 ?>
                                                         <tr>
                                                         <td><?php echo $giroASUArray['desde_hasta']; ?></td>
@@ -556,7 +552,7 @@
                                                 <table>
                                                     <tbody>
 <?php
-    foreach ($JSONGiros['saltodelguaira_usd'] as $giroASUKey=>$giroASUArray) {
+    foreach ($JSONGiros['encarnacion_usd'] as $giroASUKey=>$giroASUArray) {
 ?>
                                                         <tr>
                                                         <td><?php echo $giroASUArray['desde_hasta']; ?></td>
@@ -1625,10 +1621,10 @@
             }
 
             function actualizar(){
-			    location.reload(true);
+                location.reload(true);
             }
 
-            setTimeout("actualizar()",300000);
+            setTimeout("actualizar()", 300000);
 
             setTimeout(function() {
                 initLoadTablero("villamorra-ico");
@@ -1639,6 +1635,13 @@
                 initLoadTablero("encarnacion-ico");
                 initGiros(0);
             }, 4000);
+
+            document.addEventListener("visibilitychange", function() {
+                console.log( document.visibilityState );
+                if (document.visibilityState == 'visible') {
+                    actualizar();
+                }
+            });
 
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
