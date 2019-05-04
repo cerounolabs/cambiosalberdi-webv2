@@ -1212,6 +1212,12 @@
         		</div>
         	</div>
         </div>
+
+            <!-- BEGIN: FLOATING SOCIAL BUTTON -->
+            <a data-toggle="tooltip" data-placement="top" title="Mes de la Patria" class="floating-social-btn" href="javascript:void(0)">
+                <img src="assets/images/logo/paraguay_mayo.png" style="">
+            </a> 
+            <!-- END: FLOATING SOCIAL BUTTON -->
         
             <!-- HEADER: NAV -->
             <header class="header4" style="position:fixed; width:100%; height: 70px; top:0; overflow: hidden;">

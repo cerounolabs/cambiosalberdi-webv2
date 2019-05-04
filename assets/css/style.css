@@ -9973,14 +9973,14 @@ footer .social-links a {
 .floating-social-btn {
     -webkit-box-shadow: 0 4px 5px -1px rgba(0,0,0,.5);
     box-shadow: 0 4px 5px -1px rgba(0,0,0,.5);
-    background: #08c;
+    /*background: #08c;*/
     position: fixed;
     right: 22px;
     bottom: 108px;
-    width: 55px;
+    width: 70px;
     text-align: center;
-    height: 55px;
-    line-height: 55px;
+    height: 70px;
+    line-height: 70px;
     font-size: 40px;
     border-radius: 50%;
     transition: all 250ms ease-in-out;
