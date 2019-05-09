@@ -870,7 +870,7 @@
                                                             <div class="member01-content-inside">
                                                                 <h3 class="member01_name">CASA MATRIZ</h3>
                                                                 <h5 class="member01_position">Alberdi Nº 247 e/ Pte. Franco y Palma - Asunción</h5>
-                                                                <h5 class="member01_position">(021) 447.003 / (021) 447.004</h5>
+                                                                <h5 class="member01_position">(021) 447.002 / (021) 447.003 / (021) 447.004 / (021) 449.687</h5>
 					                                        </div>
 					                                    </div>
 					                                </div>
@@ -887,7 +887,7 @@
                                                             <div class="member01-content-inside">
                                                                 <h3 class="member01_name">SUCURSAL VILLA MORRA</h3>
                                                                 <h5 class="member01_position">Mariscal López N°4217 C/ Capitán Motta - Asunción</h5>
-                                                                <h5 class="member01_position">(021) 609.905 / (021) 609.906</h5>
+                                                                <h5 class="member01_position">(021) 609.905 / (021) 609.906 / (021) 609.920 / (0981) 987.002</h5>
 					                                        </div>
 					                                    </div>
 					                                </div>
@@ -904,7 +904,7 @@
                                                             <div class="member01-content-inside">
                                                                 <h3 class="member01_name">SUCURSAL 1 CDE</h3>
                                                                 <h5 class="member01_position">Monseñor Rodríguez esq. Pampliega – Ciudad del Este</h5>
-                                                                <h5 class="member01_position">(061) 500.135 / (061) 500.417</h5>
+                                                                <h5 class="member01_position">(061) 500.135 / (061) 500.417 / (0983) 548.754 / (0984) 263.111</h5>
 					                                        </div>
 					                                    </div>
 					                                </div>
@@ -925,7 +925,7 @@
                                                             <div class="member01-content-inside">
                                                                 <h3 class="member01_name">SUCURSAL 4 SALTO DEL GUAIR&Aacute;</h3>
                                                                 <h5 class="member01_position">Avda. Paraguay Nº 686 c/ Carlos Ricardo Mendes Goncalves – Salto del Guairá</h5>
-                                                                <h5 class="member01_position">(046) 243.158 / (046) 243.159</h5>
+                                                                <h5 class="member01_position">(046) 243.158 / (046) 243.159 / (0984) 807.061 / (0984) 807.063</h5>
 					                                        </div>
 					                                    </div>
 					                                </div>
@@ -942,7 +942,7 @@
                                                             <div class="member01-content-inside">
                                                                 <h3 class="member01_name">SUCURSAL 7 ENCARNACI&Oacute;N</h3>
                                                                 <h5 class="member01_position">Mcal. Estigarribia 1436 entre Villarica y Tomas R. Pereira – Encarnación</h5>
-                                                                <h5 class="member01_position">(071) 205.154 / (071) 205.120</h5>
+                                                                <h5 class="member01_position">(071) 205.154 / (071) 205.120 / (071) 205.144 / (0985) 881.117</h5>
 					                                        </div>
 					                                    </div>
 					                                </div>
@@ -959,7 +959,7 @@
                                                             <div class="member01-content-inside">
                                                                 <h3 class="member01_name">AGENCIA 1 CDE RUBIO &Ntilde;U</h3>
                                                                 <h5 class="member01_position">Rubio Ñu c/ Monseñor Rodríguez – Ciudad del Este</h5>
-                                                                <h5 class="member01_position">(061) 512.493 / (061) 514.399</h5>
+                                                                <h5 class="member01_position">(061) 512.493 / (061) 514.399 / (061) 500.256 / (0983) 548.753</h5>
 					                                        </div>
 					                                    </div>
 					                                </div>
@@ -980,7 +980,7 @@
                                                             <div class="member01-content-inside">
                                                                 <h3 class="member01_name">AGENCIA 2 CDE JEBAI</h3>
                                                                 <h5 class="member01_position">Regimiento Piribebuy e/ Monseñor Rodríguez y Adrián Jara – Local 3009/10 – Galería Jebai Center II – Ciudad del Este</h5>
-                                                                <h5 class="member01_position">(061) 506.060 / (061) 501.081</h5>
+                                                                <h5 class="member01_position">(061) 506.060 / (061) 501.081 / (061) 504.484 / (0983) 548.748</h5>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -997,7 +997,7 @@
                                                             <div class="member01-content-inside">
                                                                 <h3 class="member01_name">AGENCIA 3 CDE LAI LAI</h3>
                                                                 <h5 class="member01_position">Adrian Jara esq. Itá Ybate – Salón Nº 1 Planta Baja – Galería Lai Lai – Ciudad del Este</h5>
-                                                                <h5 class="member01_position">(061) 501.362 / (061) 501.368</h5>
+                                                                <h5 class="member01_position">(061) 501.362 / (061) 501.368 / (061) 501.358 / (0983) 548.751</h5>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1014,7 +1014,7 @@
                                                             <div class="member01-content-inside">
                                                                 <h3 class="member01_name">AGENCIA 4 SALTO DEL GUAIR&Aacute;</h3>
                                                                 <h5 class="member01_position">Avda. Paraguay c/ Pedro Juan Caballero – Salto del Guairá</h5>
-                                                                <h5 class="member01_position">(046) 242.927 / (046) 243.187</h5>
+                                                                <h5 class="member01_position">(046) 242.927 / (046) 243.187 / (0984) 807.062 / (0984) 807.064</h5>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1035,7 +1035,7 @@
                                                             <div class="member01-content-inside">
                                                                 <h3 class="member01_name">AGENCIA 5 CDE UNIAMERICA</h3>
                                                                 <h5 class="member01_position">Avda. Itá Ybate – Galería Uniamerica – Ciudad del Este</h5>
-                                                                <h5 class="member01_position">(061) 511.392 / (061) 511.393</h5>
+                                                                <h5 class="member01_position">(061) 511.392 / (061) 511.393 / (0983) 548.738</h5>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1052,7 +1052,7 @@
                                                             <div class="member01-content-inside">
                                                                 <h3 class="member01_name">AGENCIA 6 SAN LORENZO</h3>
                                                                 <h5 class="member01_position">Julia Miranda Cueto c/ Mcal. Estigarribia – San Lorenzo</h5>
-                                                                <h5 class="member01_position">(021) 571.215 / (021) 571.216</h5>
+                                                                <h5 class="member01_position">(021) 571.215 / (021) 571.216 / (0986) 468.810</h5>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1069,7 +1069,7 @@
                                                             <div class="member01-content-inside">
                                                                 <h3 class="member01_name">AGENCIA 7 CDE KM 4</h3>
                                                                 <h5 class="member01_position">Super Carretera Fco Solano Lopez c/Fortin Pirizal – Ciudad del Este</h5>
-                                                                <h5 class="member01_position">(061) 571.540 / (061) 571.536</h5>
+                                                                <h5 class="member01_position">(061) 571.540 / (061) 571.536 / (061) 571.535 / (061) 571.280</h5>
                                                             </div>
                                                         </div>
                                                     </div>
