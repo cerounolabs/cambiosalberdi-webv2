@@ -1,5 +1,5 @@
 <?php
-    $api                            = 'http://www.cambiosalberdi.com/ws';
+    $api = 'https://www.cambiosalberdi.com/ws';
 
     function get_curl($ext){
         global $api;

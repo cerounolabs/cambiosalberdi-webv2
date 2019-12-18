@@ -44,6 +44,15 @@ jQuery(document).ready(function($){
         });
     }
 
+    if ($('#webticker-dark-icons-2').length) {   
+      $("#webticker-dark-icons-2").webTicker({
+          height:'auto', 
+          duplicate:true, 
+          startEmpty:false, 
+          rssfrequency:5
+      });
+    }
+
 
         if (jQuery('body .lms-course-price .learn-press-message').length){
             jQuery("body .lms-course-price .learn-press-message").prependTo(".course-landing-summary");
