@@ -30649,7 +30649,7 @@ section#cd-timeline.timeline_right .cd-timeline-content::before {
 .tickercontainer {
     width: 100%;
 }
-.tickers-black-sm .tickercontainer {
+.tickers-black-sm .tickercontainer, .tickers-black-sm-2 .tickercontainer {
     background-color: #252525;
     color: #fff;
     left: 0;
@@ -30665,16 +30665,16 @@ section#cd-timeline.timeline_right .cd-timeline-content::before {
 .irs-single::after {
     border-top-color: #ffd500;
 }
-.tickers-black-sm .tickercontainer li .coin-value {
+.tickers-black-sm .tickercontainer li .coin-value, .tickers-black-sm-2 .tickercontainer li .coin-value {
   color: #ffd600;
 }
-.tickers-black-sm.crypto-ticker {
+.tickers-black-sm.crypto-ticker, .tickers-black-sm-2.crypto-ticker {
     position: fixed;
     bottom: 0;
     z-index: 99;
     box-shadow: 20px 5px 0px 5px rgba(0, 0, 0, 0.05) !important;
 }
-.tickers-black-sm .tickercontainer li {
+.tickers-black-sm .tickercontainer li, .tickers-black-sm-2 .tickercontainer li {
     font-size: 20px;
     font-weight: bold;
     line-height: 40px;

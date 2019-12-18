@@ -1,0 +1,11 @@
+RewriteEngine on
+
+RewriteRule ^nosotros$ nosotros.php
+RewriteRule ^sucursales$ sucursales.php
+RewriteRule ^contacto$ contacto.php
+RewriteRule ^pld$ pld.php
+
+
+Header set Access-Control-Allow-Origin "*" env=CORS
+Header set Access-Control-Allow-Methods "GET" env=CORS
+Header set Access-Control-Allow-Credentials "false" env=CORS

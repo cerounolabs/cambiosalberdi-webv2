@@ -13,6 +13,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+
     <meta http-equiv="Expires" content="0">
     <meta http-equiv="Last-Modified" content="0">
     <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
@@ -20,7 +21,12 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Ofrecemos servicios de Cambios de Monedas extranjeras y transferencias Nacionales e Internacionales de dinero. Contamos con sucursales y agencias en varios puntos del Paraguay. Vea la cotización del día."/>
-    <meta name="robots" content="noindex,follow" />
+    <meta name="keywords" content="cambios, casas de cambios, casas de cambios en paraguay,  cotizacion, cotizaciones, cambios paraguay, cotizacion paraguay, dolar real, divisas, paraguay cambios, ciudad del este cambios, asuncion cambios, Cotação do dólar no Paraguai, dolar paraguai">
+    <meta name="author" content="CEROUNO Labs | Christian Zelaya">
+<!--    
+    <meta name="robots" content="index,follow" />
+-->
+    <meta name="google-site-verification" content="JlcChEHD4MpSV5lqVS5c9ipem56S7EzdB6N-8FPlSTU" />
 
     <meta property="og:locale" content="es_ES" />
     <meta property="og:type" content="website" />
@@ -36,7 +42,7 @@
     <meta name="twitter:creator" content="@CambiosAlberdi" />
 
     <link rel="shortcut icon" href="assets/images/logo/favicon.ico">
-    <title>CAMBIOS ALBERDI S.A. &#8211; PY</title>
+    <title>CAMBIOS ALBERDI S.A.</title>
     
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" media="all" href="assets/css/simple-line-icons.css"/>
@@ -149,6 +155,9 @@
                                                         <a data-type="encarnacion-ico"> ENCARNACI&Oacute;N</a>
                                                     </li>
                                                 </ul>
+                                            </div>
+                                            <div class="cd-tab-filter" style="height:45px;">
+                                                <p style="font-size:18px; margin-top:10px; font-weight:bold; color:#15A346;">ACTUALIZADO AL <?php echo date('d/m/Y H:i:s'); ?></p>
                                             </div>
                                         </div>
                                         <section class="cd-gallery">
@@ -385,15 +394,15 @@
                                     </div>
                                     <div class="spacer_80"></div>
                                     <div class="row">
-                                        <div class="col-sm-12 col-md-6">
+                                        <div class="col-sm-12 col-md-4">
                                             <figure>
                                                 <img width="570" height="335" src="assets/images/cryptic-currency12.png" alt="cryptic-currency" />
                                             </figure>
                                         </div>
-                                        <div class="col-sm-12 col-md-6">
+                                        <div class="col-sm-12 col-md-8">
                                             <div class="exchange_calculator">
 	                                            <div class="text-left">
-	                                                <form id="operacion_calc" class="cp-form">                                         
+	                                                <form id="operacion_calc" class="cp-form">
                                                         <select id="ciudad_operacion" class="currency_switcher" onchange="calcOperacion(1);">
 	                                                        <option value="asuncion">ASUNCI&Oacute;N</option>
                                                             <option value="villamorra">VILLA MORRA</option>
@@ -403,8 +412,12 @@
                                                             <option value="km4">KM4 CDE</option>
                                                             <option value="encarnacion">ENCARNACI&Oacute;N</option>
                                                         </select>
-                                                        = SUCURSAL DE OPERACI&Oacute;N
-                                                        <br />                              
+                                                        <br /><br />
+
+                                                        <select id="tipo_tengo" class="currency_switcher">
+                                                            <option value="tengo">TENGO</option>
+                                                        </select>
+
                                                         <select id="moneda_tengo" class="currency_switcher" onchange="calcOperacion(1);">
                                                             <option value="PYG">GUARAN&Iacute;ES PYG</option>
                                                             <option value="USD">D&Oacute;LAR USD</option>
@@ -412,22 +425,23 @@
                                                             <option value="ARS">PESO ARS</option>
                                                             <option value="EUR">EURO EUR</option>
                                                         </select>
-                                                        = LA MONEDA QUE TENGO
-                                                        <br />
+
                                                         <input id="importe_tengo" type="text" class="currency1value" value="0" onchange="calcOperacion(1);"/>
-                                                        = EL IMPORTE QUE TENGO
-                                                        <br />
-                                                        <select id="moneda_quiero" class="currency_switcher" onchange="calcOperacion(2);">
+                                                        <br /><br />
+
+                                                        <select id="tipo_quiero" class="currency_switcher">
+                                                            <option value="quiero">QUIERO</option>
+                                                        </select>
+
+                                                        <select id="moneda_quiero" class="currency_switcher" onchange="calcOperacion(1);">
                                                             <option value="USD">D&Oacute;LAR USD</option>
                                                             <option value="PYG">GUARAN&Iacute;ES PYG</option>
                                                             <option value="BRL">REAL BRL</option>
                                                             <option value="ARS">PESO ARS</option>
                                                             <option value="EUR">EURO EUR</option>
                                                         </select>
-                                                        = LA MONEDA QUE QUIERO
-                                                        <br />
-                                                        <input id="importe_quiero" type="text" class="currency2value" value="0" onchange="calcOperacion(2);"/>
-                                                        = EL IMPORTE QUE QUIERO
+
+                                                        <input id="importe_quiero" type="text" class="currency2value" value="0" onchange="calcOperacion(2);" realonly/>
 	                                                </form>
 	                                            </div>
 	                                        </div>
@@ -1214,9 +1228,45 @@
         </div>
 
             <!-- BEGIN: FLOATING SOCIAL BUTTON -->
-            <a data-toggle="tooltip" data-placement="top" title="Mes de la Patria" class="floating-social-btn" href="javascript:void(0)">
-                <img src="assets/images/logo/paraguay_mayo.png" style="">
-            </a> 
+<?php
+    if(date('m') == 4){
+?>
+            <a data-toggle="tooltip" data-placement="top" title="Mayo Día de la Independencia" class="floating-social-btn" href="javascript:void(0)">
+                <img src="assets/images/logo/mayo_paraguay.png.png" style="">
+            </a>
+<?php
+    }
+?>
+
+<?php
+    if(date('m') == 10){
+?>
+            <a data-toggle="tooltip" data-placement="top" title="Octubre Rosa" class="floating-social-btn" href="javascript:void(0)">
+                <img src="assets/images/logo/octubre_rosa.png" style="">
+            </a>
+<?php
+    }
+?>
+
+<?php
+    if(date('m') == 11){
+?>
+            <a data-toggle="tooltip" data-placement="top" title="Noviembre Azul" class="floating-social-btn" href="javascript:void(0)">
+                <img src="assets/images/logo/noviembre_azul.png" style="">
+            </a>
+<?php
+    }
+?>
+
+<?php
+    if(date('m') == 12){
+?>
+            <a data-toggle="tooltip" data-placement="top" title="Diciembre Fiesta" class="floating-social-btn" href="javascript:void(0)">
+                <img src="assets/images/logo/diciembre_arbol.gif" style="">
+            </a>
+<?php
+    }
+?>
             <!-- END: FLOATING SOCIAL BUTTON -->
         
             <!-- HEADER: NAV -->
@@ -1226,6 +1276,7 @@
                     <div class="container">
                         <div class="row">
                             <!-- LOGO -->
+
                             <div class="navbar-header col-sm-12 col-md-3">
                                 <h1 class="logo">
                                     <a href="index.php">
@@ -1233,6 +1284,7 @@
                                     </a>
                                 </h1>
                             </div>
+
                             <!-- NAV MENU -->
 
                             <!-- NAV MENU -->
@@ -1679,7 +1731,7 @@
                             }
                         }
 
-                        if (((codMonTen.value == 'PYG') && (codMonQui.value == 'PYG')) || (codMonTen.value == codMonQui.value)) {
+                        if (((codMonTen.value == 'PYG') && (codMonQui.value == 'PYG')) || (codMonTen.value == codMonQui.value) || (((codMonTen.value == 'BRL') || (codMonTen.value == 'ARS') || (codMonTen.value == 'EUR')) && ((codMonQui.value == 'BRL') || (codMonQui.value == 'ARS') || (codMonQui.value == 'EUR')))) {
                             codImpQui.value = 0;
                             codImpTen.value = 0;
                         }
